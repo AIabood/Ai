@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة </title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="displayMessage('Help')">Help</a></li>
+        <li><a href="#" onclick="displayMessage('About')">About</a></li>
+        <li><a href="#" onclick="displayMessage('Contact')">Contact</a></li>
+    </ul>
+
+    <h1 id="welcome-message">Welcome to our website</h1>
+    <p id="description">We provide great services to help 
+        you achieve your goals.
+         Through our platform,
+         you can take advantage of the tools and
+          resources we provide. </p>
+    <a href="ai2.html" class="login-button" onclick="login()">Login</a>
+
+    <script>
+        function displayMessage(section) {
+            // تغير محتوى الرسالة الترحيبية بناءً على العنصر الذي تم النقر عليه
+            var welcomeMessage = document.getElementById("welcome-message");
+            welcomeMessage.textContent = "You clicked on " + section + " section!";
+        }
+
+        function login() {
+            // عرض رسالة عند النقر على زر تسجيل الدخول
+            alert("Welcome! You are now being redirected to the login page.");
+        }
+    </script>
+
+
+</body>
+</html> 
